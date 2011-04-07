@@ -200,7 +200,7 @@ public class MultiVerse extends JavaPlugin {
         Player player = (Player) sender;
 
         if (MultiVerse.Permissions == null) {
-            sender.sendMessage("Permissions 2.1 is not Enabled, or hasn't been found.");
+            sender.sendMessage("Permissions 2.5.5 is not Enabled, or hasn't been found.");
             return true;
         }
 
