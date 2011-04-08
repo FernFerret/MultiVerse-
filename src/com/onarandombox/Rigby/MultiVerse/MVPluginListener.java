@@ -15,8 +15,8 @@ public class MVPluginListener extends ServerListener {
     public MVPluginListener(MultiVerse instance) {
         this.plugin = instance;
     }
-
-    public void onPluginEnabled(PluginEnableEvent event) {
+    @Override
+    public void onPluginEnable(PluginEnableEvent event) {
         if (event.getPlugin().getDescription().getName().equals("Permissions")) {
             MultiVerse.Permissions = Permissions.Security;
             log.info("[MultiVerse] Found Permissions, enabling commands.");
