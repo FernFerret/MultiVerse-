@@ -15,7 +15,7 @@ public class MVPluginListener extends ServerListener {
     public MVPluginListener(MultiVerse instance) {
         this.plugin = instance;
     }
-    @Override
+
     public void onPluginEnable(PluginEnableEvent event) {
         if (event.getPlugin().getDescription().getName().equals("Permissions")) {
             MultiVerse.Permissions = Permissions.Security;
